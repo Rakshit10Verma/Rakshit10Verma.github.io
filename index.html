@@ -56,6 +56,23 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        /* AI Modal Loader */
+        .loader {
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            border-left-color: #16A085;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 2rem auto;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 
@@ -85,7 +102,8 @@
                 <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-4">Your Business Goals, Translated into <span class="accent-color">Technical Solutions.</span></h1>
                 <p class="text-lg md:text-xl text-gray-300 font-serif-body mb-6">I re-engineer complex business processes for maximum efficiency using automation and data-driven insights.</p>
                 <p class="text-md md:text-lg text-gray-400 max-w-2xl mx-auto mb-8">As a student of both Data Science at GISMA and Software Engineering at 42 Berlin, I bridge the critical gap between strategic ambition and technical reality.</p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 flex-wrap">
+                    <a href="https://www.linkedin.com/in/rakshit-verma-972132223/" target="_blank" class="bg-transparent border-2 border-accent-color text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 hover:bg-accent-color hover:border-accent-color shadow-lg">Connect on LinkedIn</a>
                     <a href="#work" class="bg-accent-color text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 bg-accent-color-hover shadow-lg">View My Work</a>
                     <a href="https://drive.google.com/file/d/120wxT0MmJIeUAzuV4yYSecFE2mYWbyey/view?usp=sharing" target="_blank" class="bg-transparent border-2 border-accent-color text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 hover:bg-accent-color hover:border-accent-color shadow-lg">Download Résumé</a>
                 </div>
@@ -139,81 +157,103 @@
         
             <div class="max-w-5xl mx-auto">
                 <!-- Flagship Case Study -->
-                <div class="glass-effect rounded-xl overflow-hidden md:flex items-center mb-16 shadow-2xl">
-                    <div class="p-8 md:p-12 md:max-w-2xl/2">
-                        <span class="text-sm font-semibold accent-color tracking-widest uppercase">Flagship Project</span>
-                        <h3 class="text-2xl md:text-3xl font-bold text-white mt-2 mb-4">G-Race: Process Automation & Integration
-                        </h3>
-                        <div class="font-serif-body text-gray-300 space-y-4">
-                            <p><strong class="text-white">Problem:</strong> Manual, error-prone client onboarding was slow,
-                                inconsistent, and causing valuable leads to fall through the cracks.</p>
-                            <p><strong class="text-white">Solution:</strong> As the key "Business-Technology Translator," I
-                                engineered an end-to-end automated workflow using Make.com, Zapier, and Airtable to connect
-                                their CRM, email, and project management tools seamlessly.</p>
-                            <p><strong class="text-white">Result:</strong> The new system
-                                <strong class="accent-color">cut manual effort by 37%</strong> and fueled a
-                                <strong class="accent-color">24% surge in lead conversions</strong> by ensuring rapid,
-                                consistent follow-up.</p>
+                <div class="glass-effect rounded-xl overflow-hidden mb-16 shadow-2xl" 
+                     data-title="G-Race: Process Automation & Integration" 
+                     data-desc="Problem: Manual, error-prone client onboarding was slow, inconsistent, and causing valuable leads to fall through the cracks. Solution: As the key 'Business-Technology Translator,' I engineered an end-to-end automated workflow using Make.com, Zapier, and Airtable to connect their CRM, email, and project management tools seamlessly. Result: The new system cut manual effort by 37% and fueled a 24% surge in lead conversions by ensuring rapid, consistent follow-up."
+                     data-tech="Make.com, Zapier, Airtable, CRM, Process Automation">
+                    <div class="md:flex items-center">
+                        <div class="p-8 md:p-12 md:max-w-2xl/2">
+                            <span class="text-sm font-semibold accent-color tracking-widest uppercase">Flagship Project</span>
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mt-2 mb-4">G-Race: Process Automation & Integration</h3>
+                            <div class="font-serif-body text-gray-300 space-y-4">
+                                <p><strong class="text-white">Problem:</strong> Manual, error-prone client onboarding was slow, inconsistent, and causing valuable leads to fall through the cracks.</p>
+                                <p><strong class="text-white">Solution:</strong> As the key "Business-Technology Translator," I engineered an end-to-end automated workflow using Make.com, Zapier, and Airtable to connect their CRM, email, and project management tools seamlessly.</p>
+                                <p><strong class="text-white">Result:</strong> The new system <strong class="accent-color">cut manual effort by 37%</strong> and fueled a <strong class="accent-color">24% surge in lead conversions</strong> by ensuring rapid, consistent follow-up.</p>
+                            </div>
+                             <div class="mt-6 flex flex-wrap gap-4">
+                                <a href="https://rakshit10verma.github.io/Workflow-flowcharts/" target="_blank" class="inline-block bg-accent-color text-white font-bold py-2 px-6 rounded-lg transition-transform transform hover:scale-105 bg-accent-color-hover">View Flowchart</a>
+                                <button class="ai-explain-btn inline-block bg-transparent border border-accent-color text-accent-color font-bold py-2 px-6 rounded-lg transition-all transform hover:scale-105 hover:bg-accent-color hover:text-white">✨ Explain with AI</button>
+                            </div>
                         </div>
-                        <a href="https://rakshit10verma.github.io/Workflow-flowcharts/" target="_blank"
-                            class="mt-6 inline-block bg-accent-color text-white font-bold py-2 px-6 rounded-lg transition-transform transform hover:scale-105 bg-accent-color-hover">View
-                            Flowchart</a>
-                        <button class="ai-explain-btn inline-block bg-transparent border border-accent-color text-accent-color font-bold py-2 px-6 rounded-lg transition-all transform hover:scale-105 hover:bg-accent-color hover:text-white">✨ Explain with AI</button>
-                    </div>
                     <div class="md:w-1/2 h-64 md:h-auto bg-cover bg-center"
                         style="background-image: url('https://placehold.co/800x600/1a0c24/8a008a?text=Process+Flow')">
                         <!-- Placeholder for an engaging visual like a flowchart snippet -->
+                    </div>
                     </div>
                 </div>
     
                 <!-- Supporting Projects Grid -->
                 <div class="grid md:grid-cols-2 gap-8">
                     <!-- Card 1 -->
-                    <div class="glass-effect p-6 rounded-xl flex flex-col justify-between shadow-lg">
+                    <div class="glass-effect p-6 rounded-xl flex flex-col justify-between shadow-lg" 
+                         data-title="Unicorn Companies Analysis" 
+                         data-desc="Researched, cleaned, and modeled a complex dataset of 1,000+ global startups to deliver actionable market insights for stakeholders." 
+                         data-tech="Python (Pandas, Matplotlib), Jupyter">
                         <div>
                             <span class="inline-block bg-gray-700 text-gray-300 text-xs font-semibold px-2 py-1 rounded-full mb-3">Data Visualization & Market Analysis</span>
                             <h4 class="text-xl font-bold text-white mb-2">Unicorn Companies Analysis</h4>
-                            <p class="font-serif-body text-gray-400 mb-4 text-sm">Researched, cleaned, and modeled a complex dataset of 1,000+ global startups to deliver actionable market insights for stakeholders.</p>
+                            <p class="font-serif-body text-gray-300 mb-4 text-base leading-relaxed">Researched, cleaned, and modeled a complex dataset of 1,000+ global startups to deliver actionable market insights for stakeholders.</p>
                         </div>
-                        <div>
-                            <p class="text-xs text-gray-500 mb-4"><strong>Technologies:</strong> Python (Pandas, Matplotlib), Jupyter</p>
-                            <a href="https://github.com/Rakshit10Verma/Unicorn_Companies_Data_Visualization" target="_blank" class="text-center w-full block bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors">View on GitHub</a>
+                        <div class="mt-4">
+                            <p class="text-sm text-gray-400 mb-4"><strong>Technologies:</strong> Python (Pandas, Matplotlib), Jupyter</p>
+                             <div class="flex flex-wrap gap-4">
+                                <a href="https://github.com/Rakshit10Verma/Unicorn_Companies_Data_Visualization" target="_blank" class="flex-grow text-center bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors">View on GitHub</a>
+                                <button class="ai-explain-btn flex-grow text-center bg-transparent border border-gray-600 text-gray-300 font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors">✨ Explain</button>
+                            </div>
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="glass-effect p-6 rounded-xl flex flex-col justify-between shadow-lg">
+                    <div class="glass-effect p-6 rounded-xl flex flex-col justify-between shadow-lg"
+                         data-title="India AQI Forecast"
+                         data-desc="Built a complete end-to-end application, from data collection and model training to deploying a functional forecasting tool with Streamlit."
+                         data-tech="Python (Scikit-learn, Statsmodels), Streamlit">
                         <div>
                             <span class="inline-block bg-gray-700 text-gray-300 text-xs font-semibold px-2 py-1 rounded-full mb-3">Machine Learning & App Deployment</span>
                             <h4 class="text-xl font-bold text-white mb-2">India AQI Forecast</h4>
-                            <p class="font-serif-body text-gray-400 mb-4 text-sm">Built a complete end-to-end application, from data collection and model training to deploying a functional forecasting tool with Streamlit.</p>
+                            <p class="font-serif-body text-gray-300 mb-4 text-base leading-relaxed">Built a complete end-to-end application, from data collection and model training to deploying a functional forecasting tool with Streamlit.</p>
                         </div>
-                        <div>
-                            <p class="text-xs text-gray-500 mb-4"><strong>Technologies:</strong> Python (Scikit-learn, Statsmodels), Streamlit</p>
-                            <a href="https://github.com/Rakshit10Verma/india_aqi_forcast" target="_blank" class="text-center w-full block bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors">View on GitHub</a>
+                        <div class="mt-4">
+                            <p class="text-sm text-gray-400 mb-4"><strong>Technologies:</strong> Python (Scikit-learn, Statsmodels), Streamlit</p>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="https://github.com/Rakshit10Verma/india_aqi_forcast" target="_blank" class="flex-grow text-center bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors">View on GitHub</a>
+                                <button class="ai-explain-btn flex-grow text-center bg-transparent border border-gray-600 text-gray-300 font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors">✨ Explain</button>
+                            </div>
                         </div>
                     </div>
                     <!-- Card 3 -->
-                    <div class="glass-effect p-6 rounded-xl flex flex-col justify-between shadow-lg">
+                    <div class="glass-effect p-6 rounded-xl flex flex-col justify-between shadow-lg"
+                        data-title="AI Manager Dashboard"
+                        data-desc="Designed and developed an intuitive dashboard to translate complex performance data into clear, simple visuals for non-technical managers."
+                        data-tech="HTML, CSS, JavaScript (Chart.js)">
                         <div>
                             <span class="inline-block bg-gray-700 text-gray-300 text-xs font-semibold px-2 py-1 rounded-full mb-3">Business Intelligence & UI/UX</span>
                             <h4 class="text-xl font-bold text-white mb-2">AI Manager Dashboard</h4>
-                            <p class="font-serif-body text-gray-400 mb-4 text-sm">Designed and developed an intuitive dashboard to translate complex performance data into clear, simple visuals for non-technical managers.</p>
+                            <p class="font-serif-body text-gray-300 mb-4 text-base leading-relaxed">Designed and developed an intuitive dashboard to translate complex performance data into clear, simple visuals for non-technical managers.</p>
                         </div>
-                        <div>
-                            <p class="text-xs text-gray-500 mb-4"><strong>Technologies:</strong> HTML, CSS, JavaScript (Chart.js)</p>
-                            <a href="https://rakshit10verma.github.io/ai-manager-dashboard/" target="_blank" class="text-center w-full block bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors">See Live Dashboard</a>
+                        <div class="mt-4">
+                            <p class="text-sm text-gray-400 mb-4"><strong>Technologies:</strong> HTML, CSS, JavaScript (Chart.js)</p>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="https://rakshit10verma.github.io/ai-manager-dashboard/" target="_blank" class="flex-grow text-center bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors">See Live Dashboard</a>
+                                <button class="ai-explain-btn flex-grow text-center bg-transparent border border-gray-600 text-gray-300 font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors">✨ Explain</button>
+                            </div>
                         </div>
                     </div>
                     <!-- Card 4 -->
-                    <div class="glass-effect p-6 rounded-xl flex flex-col justify-between shadow-lg">
+                    <div class="glass-effect p-6 rounded-xl flex flex-col justify-between shadow-lg"
+                        data-title="Diabetes Analysis Project"
+                        data-desc="Applied statistical methods to a healthcare dataset, focusing on rigorous data cleaning, feature analysis, and preparing data for predictive modeling."
+                        data-tech="Python (Pandas, NumPy), Scikit-learn">
                         <div>
                             <span class="inline-block bg-gray-700 text-gray-300 text-xs font-semibold px-2 py-1 rounded-full mb-3">Statistical Analysis & Data Cleaning</span>
                             <h4 class="text-xl font-bold text-white mb-2">Diabetes Analysis Project</h4>
-                            <p class="font-serif-body text-gray-400 mb-4 text-sm">Applied statistical methods to a healthcare dataset, focusing on rigorous data cleaning, feature analysis, and preparing data for predictive modeling.</p>
+                            <p class="font-serif-body text-gray-300 mb-4 text-base leading-relaxed">Applied statistical methods to a healthcare dataset, focusing on rigorous data cleaning, feature analysis, and preparing data for predictive modeling.</p>
                         </div>
-                        <div>
-                            <p class="text-xs text-gray-500 mb-4"><strong>Technologies:</strong> Python (Pandas, NumPy), Scikit-learn</p>
-                            <a href="https://github.com/Rakshit10Verma/Diabetes_Analysis_Project-B142" target="_blank" class="text-center w-full block bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors">View on GitHub</a>
+                        <div class="mt-4">
+                            <p class="text-sm text-gray-400 mb-4"><strong>Technologies:</strong> Python (Pandas, NumPy), Scikit-learn</p>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="https://github.com/Rakshit10Verma/Diabetes_Analysis_Project-B142" target="_blank" class="flex-grow text-center bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors">View on GitHub</a>
+                                <button class="ai-explain-btn flex-grow text-center bg-transparent border border-gray-600 text-gray-300 font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors">✨ Explain</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -268,6 +308,19 @@
              </div>
         </section>
     </main>
+
+    <!-- AI Explanation Modal -->
+    <div id="ai-modal" class="fixed inset-0 bg-black bg-opacity-80 z-50 hidden items-center justify-center p-4">
+        <div class="glass-effect rounded-xl p-6 md:p-8 max-w-2xl w-full relative max-h-[90vh] overflow-y-auto">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-transform transform hover:scale-125">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h3 id="modal-title" class="text-2xl font-bold text-white mb-4">✨ KI-generierte Erklärung</h3>
+            <div id="modal-content" class="font-serif-body text-gray-300 leading-relaxed">
+                <!-- Loader and AI response will be injected here -->
+            </div>
+        </div>
+    </div>
     
     <footer class="text-center py-6 border-t border-gray-800">
         <p class="text-gray-500">&copy; 2024 Rakshit Verma. Designed to connect business and tech.</p>
@@ -312,8 +365,99 @@
                 header.classList.remove('py-2');
             }
         });
+
+        // Gemini API Integration
+        const apiKey = ""; // Wird von der Canvas-Umgebung zur Verfügung gestellt
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+
+        const modal = document.getElementById('ai-modal');
+        const closeModalBtn = document.getElementById('close-modal');
+        const modalContent = document.getElementById('modal-content');
+        const explainButtons = document.querySelectorAll('.ai-explain-btn');
+
+        explainButtons.forEach(button => {
+            button.addEventListener('click', async (e) => {
+                const projectCard = e.target.closest('[data-title]');
+                if (!projectCard) return;
+
+                const title = projectCard.dataset.title;
+                const desc = projectCard.dataset.desc;
+                const tech = projectCard.dataset.tech;
+
+                modal.style.display = 'flex';
+                modalContent.innerHTML = '<div class="loader"></div>';
+
+                const prompt = `
+                    You are a helpful assistant for a portfolio website.
+                    Explain the following project to a non-technical hiring manager in a professional and engaging tone.
+                    Focus on the business value, the problem solved, and the impact of the solution. Do not just list the technologies.
+                    Keep the explanation concise and easy to understand (around 2-3 short paragraphs). Format the response clearly.
+                    The response should be in English.
+
+                    Project Title: "${title}"
+                    Project Description: "${desc}"
+                    Technologies Used: "${tech}"
+                `;
+
+                try {
+                    // Exponential backoff
+                    let response;
+                    let retries = 3;
+                    let delay = 1000;
+                    for (let i = 0; i < retries; i++) {
+                        response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
+                        });
+                        if (response.ok) break;
+                        if (response.status === 429 || response.status >= 500) {
+                            await new Promise(resolve => setTimeout(resolve, delay));
+                            delay *= 2;
+                        } else {
+                            break;
+                        }
+                    }
+
+                    if (!response.ok) {
+                        throw new Error(`API request failed with status ${response.status}`);
+                    }
+
+                    const result = await response.json();
+                    const candidate = result.candidates?.[0];
+
+                    if (candidate && candidate.content?.parts?.[0]?.text) {
+                        const text = candidate.content.parts[0].text;
+                        // Simple markdown to HTML for better readability
+                        let htmlText = text
+                            .replace(/\*\*(.*?)\*\*/g, '<strong class="text-white">$1</strong>')
+                            .replace(/\n/g, '<br/>');
+                        modalContent.innerHTML = `<div class="space-y-4">${htmlText}</div>`;
+                    } else {
+                       throw new Error('Invalid response structure from API');
+                    }
+
+                } catch (error) {
+                    console.error('Gemini API Error:', error);
+                    modalContent.innerText = 'Sorry, an error occurred while generating the explanation. Please check the console for details and try again later.';
+                }
+            });
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
     </script>
 </body>
 </html>
+
+
+
 
 
